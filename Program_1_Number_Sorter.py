@@ -1,5 +1,4 @@
-
-# # Print the 4 numbers from highest to lowest using only if-else statement.
+# Print the 4 numbers from highest to lowest using only if-else statement.
 
 # Steps
 #Ask the user 4 number
@@ -13,7 +12,7 @@ def Ask4Numbers():
 
 F, S, T, P = Ask4Numbers()
 
-# Arrange from high to lowest
+# Arrange from highest to lowest
 def HighestNumber():
     if F > S and F > T and F > P:
         HighestNum = F
@@ -239,6 +238,7 @@ def LowestNumber():
 
 Lowest = LowestNumber()
 
+# Display the output
 def DisplayOutput():
     print(f"Highest number is {Highest}. ")
     print(f"Second to the highest number is {High}. ")
