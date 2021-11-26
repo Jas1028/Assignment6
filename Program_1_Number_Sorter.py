@@ -33,7 +33,58 @@ def HighestNumber():
 
 Highest = HighestNumber()
 
-
+def HighNumber():
+    if Highest == F:
+        if S > T and S > P:
+            HighNum = S
+            return HighNum
+        else:
+            if T > S and T > P:
+                HighNum = T
+                return HighNum
+            else:
+                if P > S and P > T:
+                    HighNum = P 
+                    return HighNum
+    if Highest == S:
+        if F > T and F > P:
+            HighNum = F
+            return HighNum
+        else:
+            if T > F and T > P:
+                HighNum = T
+                return HighNum
+            else: 
+                if P > F and P > T:
+                    HighNum = P
+                    return HighNum
+    if Highest == T:              
+        if F > S and F > P:
+            HighNum = F
+            return HighNum
+        else:
+            if S > F and S > P:
+                HighNum = S
+                return HighNum
+            else: 
+                if P > F and P > S:
+                    HighNum = P
+                    return HighNum
+    if Highest == P    
+        if F > S and F > T:
+            HighNum = F
+            return HighNum
+        else:
+            if S > F and S > T:
+                HighNum = T
+                return HighNum
+            else: 
+                if T > F and T > S:
+                    HighNum = P
+                    return HighNum
+                        
+High = HighNumber()
+    
     
 
 
