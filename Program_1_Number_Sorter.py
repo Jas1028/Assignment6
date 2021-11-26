@@ -64,10 +64,10 @@ def HighNumber():
             HighNum = F
         else:
             if S > F and S > T:
-                HighNum = T
+                HighNum = S
             else: 
                 if T > F and T > S:
-                    HighNum = P
+                    HighNum = T
         return HighNum
                         
 High = HighNumber()
@@ -244,6 +244,7 @@ def DisplayOutput():
     print(f"Second to the highest number is {High}. ")
     print(f"Third to the highest number is {Low}. ")
     print(f"Lowest number is {Lowest}. ")
+    print(f"In order: {Highest}, {High}, {Low}, {Lowest}. ")
 
 DisplayOutput()
 
