@@ -70,7 +70,7 @@ def HighNumber():
                 if P > F and P > S:
                     HighNum = P
                     return HighNum
-    if Highest == P    
+    if Highest == P:    
         if F > S and F > T:
             HighNum = F
             return HighNum
@@ -84,7 +84,111 @@ def HighNumber():
                     return HighNum
                         
 High = HighNumber()
-    
+
+def LowNumber():
+    if Highest == F:
+        if High == S:
+            if T > P:
+                LowNum = T
+                return LowNum
+            else:
+                if P > T:
+                    LowNum = P
+                    return LowNum
+        if High == T:
+            if S > P:
+                LowNum = S
+                return LowNum
+        else:
+            if P > S:
+                LowNum = P
+                return LowNum
+        if High == P:
+            if S > T:
+                LowNum = S
+                return LowNum
+            else:
+                if T > S:
+                    LowNum = T
+                    return LowNum
+    if Highest == S:
+        if High == F:
+            if T > P:
+                LowNum = T
+                return LowNum
+            else:
+                if P > T:
+                    LowNum = P
+                    return LowNum
+        if High == T:
+            if F > P:
+                LowNum = F
+                return LowNum
+        else:
+            if P > F:
+                LowNum = P
+                return LowNum
+        if High == P:
+            if F > T:
+                LowNum = F
+                return LowNum
+            else:
+                if T > F:
+                    LowNum = T
+                    return LowNum
+    if Highest == T:
+        if High == F:
+            if S > P:
+                LowNum = S
+                return LowNum
+            else:
+                if P > S:
+                    LowNum = P
+                    return LowNum
+        if High == S:
+            if F > P:
+                LowNum = F
+                return LowNum
+        else:
+            if P > F:
+                LowNum = P
+                return LowNum
+        if High == P:
+            if F > S:
+                LowNum = F
+                return LowNum
+            else:
+                if S > F:
+                    LowNum = S
+                    return LowNum  
+    if Highest == P:
+        if High == F:
+            if S > T:
+                LowNum = S
+                return LowNum
+            else:
+                if T > S:
+                    LowNum = T
+                    return LowNum
+        if High == S:
+            if F > T:
+                LowNum = F
+                return LowNum
+        else:
+            if T > F:
+                LowNum = T
+                return LowNum
+        if High == T:
+            if F > S:
+                LowNum = F
+                return LowNum
+            else:
+                if S > F:
+                    LowNum = S
+                    return LowNum                                     
+        
+        
+Low = LowNumber()   
     
 
 
