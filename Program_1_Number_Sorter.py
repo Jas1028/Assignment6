@@ -162,12 +162,88 @@ def LowNumber():
         
 Low = LowNumber()   
 
+def LowestNumber():
+    if Highest == F and High == S:
+        if Low == T:
+            LowestNum = P
+        else: 
+            LowestNum = T
+        return LowestNum
+    elif Highest == F and High == T:
+        if Low == S:
+            LowestNum = P
+        else:
+            LowestNum = S
+        return LowestNum
+    elif Highest == F and High == P:
+        if Low == S:
+            LowestNum = T
+        else:
+            LowestNum = S
+        return LowestNum
+    elif Highest == S and High == F:
+        if Low == T:
+            LowestNum = P
+        else: 
+            LowestNum = T
+        return LowestNum
+    elif Highest == S and High == T:
+        if Low == F:
+            LowestNum = P
+        else:
+            LowestNum = F
+        return LowestNum
+    elif Highest == S and High == P:
+        if Low == F:
+            LowestNum = T
+        else:
+            LowestNum = F
+        return LowestNum    
+    elif Highest == T and High == F:
+        if Low == S:
+            LowestNum = P
+        else: 
+            LowestNum = S
+        return LowestNum
+    elif Highest == T and High == S:
+        if Low == F:
+            LowestNum = P
+        else:
+            LowestNum = F
+        return LowestNum
+    elif Highest == T and High == P:
+        if Low == F:
+            LowestNum = S
+        else:
+            LowestNum = F
+        return LowestNum
+    if Highest == P and High == F:
+        if Low == S:
+            LowestNum = T
+        else: 
+            LowestNum = S
+        return LowestNum
+    if Highest == P and High == S:
+        if Low == F:
+            LowestNum = T
+        else:
+            LowestNum = F
+        return LowestNum
+    elif Highest == P and High == T:
+        if Low == F:
+            LowestNum = S
+        else:
+            LowestNum = F
+        return LowestNum                   
+                   
+
+Lowest = LowestNumber()
 
 def DisplayOutput():
     print(f"Highest number is {Highest}. ")
     print(f"Second to the highest number is {High}. ")
     print(f"Third to the highest number is {Low}. ")
-    # print(f"Lowest number is {Lowest}. ")
+    print(f"Lowest number is {Lowest}. ")
 
 DisplayOutput()
 
