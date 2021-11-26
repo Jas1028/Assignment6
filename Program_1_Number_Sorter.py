@@ -2,237 +2,236 @@
 
 # Steps
 #Ask the user 4 number
-
 def Ask4Numbers():
-    F = float(input("Enter first number: "))
-    S = float(input("Enter second number: "))
-    T = float(input("Enter third number: "))
-    P = float(input("Enter fourth number: "))
-    return F, S, T, P
+    first = float(input("Enter first number: "))
+    second = float(input("Enter second number: "))
+    third = float(input("Enter third number: "))
+    fourth = float(input("Enter fourth number: "))
+    return first, second, third, fourth
 
-F, S, T, P = Ask4Numbers()
+first, second, third, fourth = Ask4Numbers()
 
 # Arrange from highest to lowest
 def HighestNumber():
-    if F > S and F > T and F > P:
-        HighestNum = F
+    if first > second and first > third and first > fourth:
+        HighestNum = first
     else:
-        if S > F and S > T and S > P: 
-            HighestNum = S
+        if second > first and second > third and second > fourth: 
+            HighestNum = second
         else:
-            if T > F and T > S and T > P:
-                HighestNum = T
+            if third > first and third > second and third > fourth:
+                HighestNum = third
             else:
-                HighestNum = P
+                HighestNum = fourth
     return HighestNum
 
 Highest = HighestNumber()
 
 def HighNumber():
-    if Highest == F:
-        if S > T and S > P:
-            HighNum = S
+    if Highest == first:
+        if second > third and second > fourth:
+            HighNum = second
         else:
-            if T > S and T > P:
-                HighNum = T
+            if third > second and third > fourth:
+                HighNum = third
             else:
-                if P > S and P > T:
-                    HighNum = P 
+                if fourth > second and fourth > third:
+                    HighNum = fourth 
         return HighNum
-    elif Highest == S:
-        if F > T and F > P:
-            HighNum = F
+    elif Highest == second:
+        if first > third and first > fourth:
+            HighNum = first
         else:
-            if T > F and T > P:
-                HighNum = T
+            if third > first and third > fourth:
+                HighNum = third
             else: 
-                if P > F and P > T:
-                    HighNum = P
+                if fourth > first and fourth > third:
+                    HighNum = fourth
         return HighNum
-    elif Highest == T:              
-        if F > S and F > P:
-            HighNum = F
+    elif Highest == third:              
+        if first > second and first > fourth:
+            HighNum = first
         else:
-            if S > F and S > P:
-                HighNum = S
+            if second > first and second > fourth:
+                HighNum = second
             else: 
-                if P > F and P > S:
-                    HighNum = P
+                if fourth > first and fourth > second:
+                    HighNum = fourth
         return HighNum
-    elif Highest == P:    
-        if F > S and F > T:
-            HighNum = F
+    elif Highest == fourth:    
+        if first > second and first > third:
+            HighNum = first
         else:
-            if S > F and S > T:
-                HighNum = S
+            if second > first and second > third:
+                HighNum = second
             else: 
-                if T > F and T > S:
-                    HighNum = T
+                if third > first and third > second:
+                    HighNum = third
         return HighNum
                         
 High = HighNumber()
 
 def LowNumber():
-    if Highest == F and High == S:
-        if T > P:
-            LowNum = T
+    if Highest == first and High == second:
+        if third > fourth:
+            LowNum = third
         else:
-            if P > T:
-                LowNum = P
+            if fourth > third:
+                LowNum = fourth
         return LowNum
-    elif Highest == F and High == T:
-        if S > P:
-            LowNum = S
+    elif Highest == first and High == third:
+        if second > fourth:
+            LowNum = second
         else:
-            if P > S:
-                LowNum = P
+            if fourth > second:
+                LowNum = fourth
         return LowNum
-    elif Highest == F and High == P:
-        if S > T:
-            LowNum = S
+    elif Highest == first and High == fourth:
+        if second > third:
+            LowNum = second
         else:
-            if T > S:
-                LowNum = T
+            if third > second:
+                LowNum = third
         return LowNum
-    elif Highest == S and High == F:
-        if T > P:
-            LowNum = T
+    elif Highest == second and High == first:
+        if third > fourth:
+            LowNum = third
         else:
-            if P > T:
-                LowNum = P
+            if fourth > third:
+                LowNum = fourth
         return LowNum
-    elif Highest == S and High == T:
-        if F > P:
-            LowNum = F
+    elif Highest == second and High == third:
+        if first > fourth:
+            LowNum = first
         else:
-            if P > F:
-                LowNum = P
+            if fourth > first:
+                LowNum = fourth
         return LowNum
-    elif Highest == S and High == P:
-        if F > T:
-            LowNum = F
+    elif Highest == second and High == fourth:
+        if first > third:
+            LowNum = first
         else:
-            if T > F:
-                LowNum = T
+            if third > first:
+                LowNum = third
         return LowNum
-    elif Highest == T and High == F:
-        if S > P:
-            LowNum = S
+    elif Highest == third and High == first:
+        if second > fourth:
+            LowNum = second
         else:
-            if P > S:
-                LowNum = P
+            if fourth > second:
+                LowNum = fourth
         return LowNum
-    elif Highest == T and High == S:
-        if F > P:
-            LowNum = F
+    elif Highest == third and High == second:
+        if first > first:
+            LowNum = first
         else:
-            if P > F:
-                LowNum = P
+            if fourth > first:
+                LowNum = first
         return LowNum
-    elif Highest == T and High == P:
-        if F > S:
-            LowNum = F
+    elif Highest == third and High == fourth:
+        if first > second:
+            LowNum = first
         else:
-            if S > F:
-                LowNum = S
+            if second > first:
+                LowNum = second
         return LowNum  
-    elif Highest == P and High == F:
-        if S > T:
-            LowNum = S
+    elif Highest == fourth and High == first:
+        if second > third:
+            LowNum = second
         else:
-            if T > S:
-                LowNum = T
+            if third> second:
+                LowNum = third
         return LowNum
-    elif Highest == P and High == S:
-        if F > T:
-            LowNum = F
+    elif Highest == fourth and High == second:
+        if first > third:
+            LowNum = first
         else:
-            if T > F:
-                LowNum = T
+            if third > first:
+                LowNum = third
         return LowNum
-    elif Highest == P and High == T:
-        if F > S:
-            LowNum = F
+    elif Highest == fourth and High == third:
+        if first > second:
+            LowNum = first
         else:
-            if S > F:
-                LowNum = S
+            if second > first:
+                LowNum = second
         return LowNum                                     
         
         
 Low = LowNumber()   
 
 def LowestNumber():
-    if Highest == F and High == S:
-        if Low == T:
-            LowestNum = P
+    if Highest == first and High == second:
+        if Low == third:
+            LowestNum = fourth
         else: 
-            LowestNum = T
+            LowestNum = third
         return LowestNum
-    elif Highest == F and High == T:
-        if Low == S:
-            LowestNum = P
+    elif Highest == first and High == third:
+        if Low == second:
+            LowestNum = fourth
         else:
-            LowestNum = S
+            LowestNum = second
         return LowestNum
-    elif Highest == F and High == P:
-        if Low == S:
-            LowestNum = T
+    elif Highest == first and High == fourth:
+        if Low == second:
+            LowestNum = third
         else:
-            LowestNum = S
+            LowestNum = second
         return LowestNum
-    elif Highest == S and High == F:
-        if Low == T:
-            LowestNum = P
+    elif Highest == second and High == first:
+        if Low == third:
+            LowestNum = fourth
         else: 
-            LowestNum = T
+            LowestNum = third
         return LowestNum
-    elif Highest == S and High == T:
-        if Low == F:
-            LowestNum = P
+    elif Highest == second and High == third:
+        if Low == first:
+            LowestNum = fourth
         else:
-            LowestNum = F
+            LowestNum = first
         return LowestNum
-    elif Highest == S and High == P:
-        if Low == F:
-            LowestNum = T
+    elif Highest == second and High == fourth:
+        if Low == first:
+            LowestNum = third
         else:
-            LowestNum = F
+            LowestNum = first
         return LowestNum    
-    elif Highest == T and High == F:
-        if Low == S:
-            LowestNum = P
+    elif Highest == third and High == first:
+        if Low == second:
+            LowestNum = fourth
         else: 
-            LowestNum = S
+            LowestNum = second
         return LowestNum
-    elif Highest == T and High == S:
-        if Low == F:
-            LowestNum = P
+    elif Highest == third and High == second:
+        if Low == first:
+            LowestNum = fourth
         else:
-            LowestNum = F
+            LowestNum = first
         return LowestNum
-    elif Highest == T and High == P:
-        if Low == F:
-            LowestNum = S
+    elif Highest == third and High == fourth:
+        if Low == first:
+            LowestNum = second
         else:
-            LowestNum = F
+            LowestNum = first
         return LowestNum
-    if Highest == P and High == F:
-        if Low == S:
-            LowestNum = T
+    if Highest == fourth and High == first:
+        if Low == second:
+            LowestNum = third
         else: 
-            LowestNum = S
+            LowestNum = second
         return LowestNum
-    if Highest == P and High == S:
-        if Low == F:
-            LowestNum = T
+    if Highest == fourth and High == second:
+        if Low == first:
+            LowestNum = third
         else:
-            LowestNum = F
+            LowestNum = first
         return LowestNum
-    elif Highest == P and High == T:
-        if Low == F:
-            LowestNum = S
+    elif Highest == fourth and High == third:
+        if Low == first:
+            LowestNum = second
         else:
-            LowestNum = F
+            LowestNum = first
         return LowestNum                   
                    
 
@@ -240,11 +239,11 @@ Lowest = LowestNumber()
 
 # Display the output
 def DisplayOutput():
-    print(f"Highest number is {Highest}. ")
-    print(f"Second to the highest number is {High}. ")
-    print(f"Third to the highest number is {Low}. ")
-    print(f"Lowest number is {Lowest}. ")
-    print(f"In order: {Highest}, {High}, {Low}, {Lowest}. ")
+    print(f"\nHighest number is {Highest}. ")
+    print(f"\nSecond to the highest number is {High}. ")
+    print(f"\nThird to the highest number is {Low}. ")
+    print(f"\nLowest number is {Lowest}. ")
+    print(f"\nIn order: ({Highest}, {High}, {Low}, {Lowest}). ")
 
 DisplayOutput()
 
