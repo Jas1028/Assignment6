@@ -113,5 +113,25 @@ else:
     print("\nLevel 5 failed. ")
     print(f"Your current score is {Score}. ")
 
+Score = Score
+
+Value11 = random.randint(0,99)
+Value12 = random.randint(0,99)
+
+
+print("\n\nLevel 6 ")
+
+Level6 = int(input(f"\nSum of {Value11} and {Value12}.\nEnter your answer: " ))
+CorrectAnswer = Value11 + Value12
+
+if CorrectAnswer == Level6:
+    print("\nLevel 6 passed. ")
+    Score = Score + 1
+    print(f"Your current score is {Score}. ")
+else:
+    CorrectAnswer != Level6
+    print("\nLevel 6 failed. ")
+    print(f"Your current score is {Score}. ")
+
 
 
