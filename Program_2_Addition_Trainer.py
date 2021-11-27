@@ -153,4 +153,24 @@ else:
     print("\nLevel 7 failed. ")
     print(f"Your current score is {Score}. ")
 
+Score = Score
+
+Value15 = random.randint(0,99)
+Value16 = random.randint(0,99)
+
+
+print("\n\nLevel 8 ")
+
+Level8 = int(input(f"\nSum of {Value15} and {Value16}.\nEnter your answer: " ))
+CorrectAnswer = Value15 + Value16
+
+if CorrectAnswer == Level8:
+    print("\nLevel 8 passed. ")
+    Score = Score + 1
+    print(f"Your current score is {Score}. ")
+else:
+    CorrectAnswer != Level8
+    print("\nLevel 8 failed. ")
+    print(f"Your current score is {Score}. ")
+
 
