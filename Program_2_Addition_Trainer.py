@@ -30,7 +30,7 @@ if CorrectAnswer == Level1:
     print(f"Your current score is {Score}. ")
 else:
     CorrectAnswer != Level1
-    print("Level 1 failed. ")
+    print("\nLevel 1 failed. ")
     print(f"Your current score is {Score}. ")
 
 Score = Score
@@ -50,7 +50,7 @@ if CorrectAnswer == Level2:
     print(f"Your current score is {Score}. ")
 else:
     CorrectAnswer != Level2
-    print("Level 2 failed. ")
+    print("\nLevel 2 failed. ")
     print(f"Your current score is {Score}. ")
     
 Score = Score
@@ -70,7 +70,7 @@ if CorrectAnswer == Level3:
     print(f"Your current score is {Score}. ")
 else:
     CorrectAnswer != Level3
-    print("Level 3 failed. ")
+    print("\nLevel 3 failed. ")
     print(f"Your current score is {Score}. ")
 
 Score = Score
@@ -90,7 +90,28 @@ if CorrectAnswer == Level4:
     print(f"Your current score is {Score}. ")
 else:
     CorrectAnswer != Level4
-    print("Level 4 failed. ")
+    print("\nLevel 4 failed. ")
     print(f"Your current score is {Score}. ")
+
+Score = Score
+
+Value9 = random.randint(0,99)
+Value10 = random.randint(0,99)
+
+
+print("\n\nLevel 5 ")
+
+Level5 = int(input(f"\nSum of {Value9} and {Value10}.\nEnter your answer: " ))
+CorrectAnswer = Value9 + Value10
+
+if CorrectAnswer == Level5:
+    print("\nLevel 5 passed. ")
+    Score = Score + 1
+    print(f"Your current score is {Score}. ")
+else:
+    CorrectAnswer != Level5
+    print("\nLevel 5 failed. ")
+    print(f"Your current score is {Score}. ")
+
 
 
