@@ -15,7 +15,7 @@ GameLevel = 10
 Score = 0
 
 
-
+#Program will ask the user 10 addition operation and user will answer it.
 Value1 = random.randint(0,99)
 Value2 = random.randint(0,99)
 
@@ -212,4 +212,18 @@ else:
     CorrectAnswer != Level10
     print("\nLevel 10 failed. ")
     print(f"Your current score is {Score}. ")
+
+Score = Score
+print("\nYour score will release in:")
+import time
+seconds = int(3)
+for i in range(seconds):
+    print(str(seconds - i ) +  " second(s). ")
+    time.sleep(1)
+
+if Score >= 5:
+    print(f"\nCongrats, you passed the evaluation.\nYour score is {Score}/{GameLevel}.") 
+else:
+    if Score < 5:
+        print(f"\nAww, you need to practice more to ehnace your skills in math.\nYour score is {Score}/{GameLevel}. ")
 
